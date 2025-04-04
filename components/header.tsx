@@ -60,7 +60,7 @@ export default function Header() {
         scrolled ? "bg-black/80 border-b border-gray-800 backdrop-blur" : "bg-transparent",
       )}
     >
-      <div className="container flex h-16 items-center justify-center">
+      <div className="container flex h-16 items-center justify-end md:justify-center">
         {/* <div className="flex items-center gap-2">
           <a href="#" className="text-xl font-medium text-white">
             {personalInfo.name}
@@ -130,7 +130,7 @@ export default function Header() {
                   "text-sm font-medium transition-colors p-2 rounded-md",
                   activeSection === item.href.substring(1)
                     ? "bg-green-500/10 text-green-400"
-                    : "text-gray-400 hover:text-green-400 hover:bg-green-500/10",
+                    : "text-gray-400 hover:text-white hover:bg-white/5",
                 )}
               >
                 {item.name}
