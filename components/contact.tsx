@@ -115,7 +115,15 @@ export default function Contact() {
               <CardDescription className="text-gray-400">I'll get back to you as soon as possible</CardDescription>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4" onSubmit={handleSubmit}>
+            <form
+                className="space-y-4"
+                action="https://formspree.io/f/xeqyyvjj"
+                method="POST"
+                onSubmit={(e) => {
+                  setIsSubmitting(true)
+                  // We don't prevent default here to allow the form to submit to Formspree
+                }}
+              >
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-gray-300">
@@ -123,6 +131,7 @@ export default function Contact() {
                     </label>
                     <Input
                       id="name"
+                        name="name"
                       placeholder="Your name"
                       value={formData.name}
                       onChange={handleChange}
@@ -136,6 +145,7 @@ export default function Contact() {
                     </label>
                     <Input
                       id="email"
+                           name="email"
                       type="email"
                       placeholder="Your email"
                       value={formData.email}
@@ -152,6 +162,7 @@ export default function Contact() {
                   <Input
                     id="subject"
                     placeholder="Subject"
+                          name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                     required
@@ -164,6 +175,7 @@ export default function Contact() {
                   </label>
                   <Textarea
                     id="message"
+                     name="message"
                     placeholder="Your message"
                     rows={5}
                     value={formData.message}
