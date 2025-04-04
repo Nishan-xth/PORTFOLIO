@@ -88,7 +88,7 @@ export default function Header() {
               )}
             </a>
           ))}
-          <Button asChild className="rounded-full custom-btn">
+          {/* <Button asChild className="rounded-full custom-btn">
             <a
               href="#contact"
               onClick={(e) => {
@@ -98,7 +98,7 @@ export default function Header() {
             >
               Contact
             </a>
-          </Button>
+          </Button> */}
         </nav>
 
         {/* Mobile menu button */}
@@ -136,9 +136,9 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
-            <Button onClick={() => handleNavClick("#contact")} className="mt-2 custom-btn">
+            {/* <Button onClick={() => handleNavClick("#contact")} className="mt-2 custom-btn">
               Contact
-            </Button>
+            </Button> */}
           </nav>
         </div>
       )}
