@@ -18,7 +18,7 @@ export default function SectionHeading({ title, subtitle, className, align = "ce
         className,
       )}
     >
-      <h2 className="text-3xl font-semibold mb-2 text-green-500">{title}</h2>
+      <h2 className="text-3xl font-semibold mb-2 text-white">{title}</h2>
       <div className="section-divider" />
       {subtitle && <p className="text-gray-400 max-w-2xl mx-auto text-sm">{subtitle}</p>}
     </div>

@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section id="about" className="py-16 bg-black/50 backdrop-blur-sm">
       <div className="container">
-        <SectionHeading title="About Me" subtitle="Get to know more about me and my background" className="text-green-500" />
+        <SectionHeading title="About Me" subtitle="Get to know more about me and my background"/>
 
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="personal" className="w-full">
