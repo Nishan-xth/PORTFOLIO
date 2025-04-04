@@ -30,12 +30,12 @@ export default function Skills() {
                 <div className="flex flex-wrap gap-2">
                   {skillCategory.items.map((skill, skillIndex) => (
                     <Badge
-                      key={skillIndex}
-                      variant="outline"
-                      className="border-white/30 text-white hover:bg-white hover:text-black transition-colors"
-                    >
-                      {skill}
-                    </Badge>
+                    key={skillIndex}
+                    variant="outline"
+                    className="border-green-500/30 text-green-400 hover:bg-green-500/10 transition-colors"
+                  >
+                    {skill}
+                  </Badge>
                   ))}
                 </div>
               </CardContent>

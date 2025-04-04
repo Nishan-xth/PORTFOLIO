@@ -46,7 +46,7 @@ export default function Hero() {
         <p className="max-w-2xl text-gray-400 mb-8">{personalInfo.summary}</p>
 
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button size="lg" onClick={() => handleScrollToSection("contact")} className="rounded-full group custom-btn">
+          <Button size="lg" onClick={() => handleScrollToSection("contact")} className="rounded-full group border-green-500/30 text-green-400 hover:bg-white transition-colors">
             Contact Me
             <Mail className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
@@ -61,7 +61,7 @@ export default function Hero() {
             href={`https://github.com/${personalInfo.github}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-gray-400 hover:text-green-400 transition-colors"
           >
             <Github className="h-6 w-6" />
             <span className="sr-only">GitHub</span>
@@ -70,12 +70,12 @@ export default function Hero() {
             href={`https://linkedin.com/in/${personalInfo.linkedin}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-gray-400 hover:text-green-400 transition-colors"
           >
             <Linkedin className="h-6 w-6" />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href={`mailto:${personalInfo.email}`} className="text-gray-400 hover:text-white transition-colors">
+          <a href={`mailto:${personalInfo.email}`} className="text-gray-400 hover:text-green-400 transition-colors">
             <Mail className="h-6 w-6" />
             <span className="sr-only">Email</span>
           </a>

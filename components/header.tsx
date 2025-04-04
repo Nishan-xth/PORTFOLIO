@@ -56,16 +56,16 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
+        "fixed top-0 z-50 w-full transition-all duration-300",
         scrolled ? "bg-black/80 border-b border-gray-800 backdrop-blur" : "bg-transparent",
       )}
     >
-      <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2">
+      <div className="container flex h-16 items-center justify-center">
+        {/* <div className="flex items-center gap-2">
           <a href="#" className="text-xl font-medium text-white">
             {personalInfo.name}
           </a>
-        </div>
+        </div> */}
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6">

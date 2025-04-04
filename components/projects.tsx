@@ -37,9 +37,9 @@ export default function Projects() {
               <CardHeader className="pb-2">
                 <div className="flex justify-between items-start">
                   <h3 className="text-lg font-medium text-white">{project.title}</h3>
-                  <Badge variant="outline" className="text-xs border-white/30 text-white">
+                  {/* <Badge variant="outline"   className="border-green-500/30 text-green-400 hover:bg-green-500/10 transition-colors text-xs">
                     {project.date}
-                  </Badge>
+                  </Badge> */}
                 </div>
                 <p className="text-sm text-gray-400">{project.technologies}</p>
               </CardHeader>

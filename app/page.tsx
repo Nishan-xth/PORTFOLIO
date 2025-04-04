@@ -17,7 +17,7 @@ export default function Home() {
       particleSize={1.5}
     >
       <Header />
-      <main>
+      <main className="pt-16">
         <Hero />
         <About />
         <Skills />

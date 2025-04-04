@@ -25,9 +25,9 @@ export default function Footer() {
     <footer className="border-t border-gray-800 py-8 bg-black/50 backdrop-blur">
       <div className="container flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
-          <p className="text-sm text-gray-400">
-            &copy; {currentYear} {personalInfo.name}. All rights reserved.
-          </p>
+        <p className="text-sm text-gray-400">
+          {personalInfo.name} | Turning ideas into reality
+        </p>
         </div>
 
         <div className="flex items-center gap-6">

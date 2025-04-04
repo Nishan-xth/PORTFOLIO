@@ -181,7 +181,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="bg-black/30 border-gray-700 text-white"
+                    className="bg-black/30 border-gray-700 text-white rounded"
                   />
                 </div>
                 <Button type="submit" className="w-full rounded-full custom-btn" disabled={isSubmitting}>
