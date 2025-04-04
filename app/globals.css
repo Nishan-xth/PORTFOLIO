@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black text-white;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+}
+
+.animate-in {
+  animation: animateIn 0.3s ease-in-out forwards;
+  opacity: 0;
+}
+
+.animate-in-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-in-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-in-delay-3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+}
+
+.section-divider {
+  position: relative;
+  height: 2px;
+  width: 40px;
+  background: rgba(0, 255, 0, 0.3);
+  margin: 0 auto 2rem;
+  border-radius: 1px;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  height: 6px;
+  width: 6px;
+  background-color: #00ff00;
+  border-radius: 50%;
+}
+
+.section-divider::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  height: 6px;
+  width: 6px;
+  background-color: #00ff00;
+  border-radius: 50%;
+}
+
+.custom-btn {
+  @apply bg-transparent text-white border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all duration-300;
+}
+
+.custom-icon-btn {
+  @apply bg-transparent text-white border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all duration-300;
+}
+
+.custom-outline-btn {
+  @apply bg-transparent text-white border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all duration-300;
+}
+
