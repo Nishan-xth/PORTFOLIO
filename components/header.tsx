@@ -79,7 +79,7 @@ export default function Header() {
               }}
               className={cn(
                 "text-sm font-medium transition-colors relative",
-                activeSection === item.href.substring(1) ? "text-green-400" : "text-gray-400 hover:text-white",
+                activeSection === item.href.substring(1) ? "text-green-400" : "text-gray-400 hover:text-green-400",
               )}
             >
               {item.name}
@@ -130,7 +130,7 @@ export default function Header() {
                   "text-sm font-medium transition-colors p-2 rounded-md",
                   activeSection === item.href.substring(1)
                     ? "bg-green-500/10 text-green-400"
-                    : "text-gray-400 hover:text-white hover:bg-white/5",
+                    : "text-gray-400 hover:text-green-400 hover:bg-green-500/10",
                 )}
               >
                 {item.name}
